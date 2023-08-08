@@ -1,5 +1,6 @@
-import type { RouteRecordRaw } from 'vue-router'
 
+import type { RouteRecordRaw } from 'vue-router'
+// @ts-ignore
 const Layout = () => import('@/layout/index.vue')
 
 export const baseRoutes: RouteRecordRaw[] = [
@@ -10,6 +11,7 @@ export const baseRoutes: RouteRecordRaw[] = [
     children: [
       {
         path: '/',
+        // @ts-ignore
         component: () => import('@/views/home/index.vue'),
         name: 'home',
         meta: {
