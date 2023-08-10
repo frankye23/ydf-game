@@ -59,7 +59,9 @@ import { Vue3Marquee } from 'vue3-marquee'
 
         <div class="mt-5 flex justify-center items-center gap-x-1 sm:gap-x-3">
           <span class="text-sm text-gray-600 dark:text-gray-400">Platform:</span>
-          <img src="../../assets/steam.png" alt="" class="w-auto h-8 rounded-full" />
+          <img src="../../assets/steam.png" alt="steam" class="w-auto h-8 rounded-full" />
+          <img src="../../assets/epic.png" alt="epic" class="w-auto h-9 rounded-full" />
+          <img src="../../assets/playstation.png" alt="playstation" class="w-auto h-8 rounded-full ml-2 mb-1" />
           <svg class="h-5 w-5 text-gray-300 dark:text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none"
             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 13L10 3" stroke="currentColor" stroke-linecap="round" />
