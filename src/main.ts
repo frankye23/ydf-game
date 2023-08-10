@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 import { setupRouter } from './router'
-
-import './styles/global.css'
+import { setupAssets } from '@/plugins'
 
 import('preline')
 
@@ -14,7 +13,7 @@ async function bootstrap() {
   // setupStore(app)
 
   // setup assets
-  // setupAssets(app)
+  setupAssets(app)
 
   // setup router
   await setupRouter(app)
