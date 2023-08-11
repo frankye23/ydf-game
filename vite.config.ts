@@ -23,7 +23,7 @@ export default ({ mode }) => {
     server: {
       proxy: {
         '/api': {
-          target: 'http://43.163.235.218:3208/',
+          target: 'https://api.ydf.life/',
           changeOrigin: true,
           secure: false,
           rewrite: (path) => path.replace('/api/', '/')

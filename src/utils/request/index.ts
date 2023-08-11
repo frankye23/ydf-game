@@ -17,5 +17,5 @@ export function createAxios(options: CreateAxiosDefaults<any> | undefined) {
 }
 
 export const request = createAxios({
-  baseURL: 'http://43.163.235.218:3208',
+  baseURL: 'https://api.ydf.life',
 })
