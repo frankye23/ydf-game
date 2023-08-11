@@ -14,7 +14,6 @@ export const baseRoutes: RouteRecordRaw[] = [
         name: 'home',
         meta: {
           title: 'Home',
-          nav: false,
         },
       },
       {
@@ -23,7 +22,6 @@ export const baseRoutes: RouteRecordRaw[] = [
         name: 'games',
         meta: {
           title: 'games',
-          nav: false,
         },
       },
       {
@@ -32,7 +30,22 @@ export const baseRoutes: RouteRecordRaw[] = [
         name: 'collection',
         meta: {
           title: 'collection',
-          nav: false,
+        },
+      },
+      {
+        path: '/trending',
+        component: () => import('@/views/trending/index.vue'),
+        name: 'trending',
+        meta: {
+          title: 'trending',
+        },
+      },
+      {
+        path: '/new',
+        component: () => import('@/views/new/index.vue'),
+        name: 'new',
+        meta: {
+          title: 'new',
         },
       },
     ],

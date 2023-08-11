@@ -28,7 +28,7 @@ const router = useRouter()
         <div class="mt-5 max-w-2xl text-center mx-auto">
           <h1 class="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
             Let's Explore
-            <span class="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent">Game</span>
+            <span class="bg-clip-text bg-gradient-to-tl from-[#dca54c] to-[#f6df9d] text-transparent">Game</span>
           </h1>
         </div>
 
@@ -40,7 +40,7 @@ const router = useRouter()
         </div>
 
         <div class="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center">
-          <a @click="router.push('/games')" class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800">
+          <a href="/games" class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800">
             Get started
             <svg class="w-3 h-3" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
@@ -81,5 +81,5 @@ const router = useRouter()
       </div>
     </div>
   </div>
-  <gallery />
+  <gallery class="mt-4" />
 </template>
