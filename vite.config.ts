@@ -19,6 +19,16 @@ export default ({ mode }) => {
       commonjsOptions: {
         transformMixedEsModules: true,
       },
+    },
+    server: {
+      proxy: {
+        '/api': {
+          target: 'http://43.163.235.218:3208/',
+          changeOrigin: true,
+          secure: false,
+          rewrite: (path) => path.replace('/api/', '/')
+        }
+      }
     }
   })
 }

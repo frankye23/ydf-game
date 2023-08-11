@@ -17,6 +17,24 @@ export const baseRoutes: RouteRecordRaw[] = [
           nav: false,
         },
       },
+      {
+        path: '/games',
+        component: () => import('@/views/list/index.vue'),
+        name: 'games',
+        meta: {
+          title: 'games',
+          nav: false,
+        },
+      },
+      {
+        path: '/collection',
+        component: () => import('@/views/collection/index.vue'),
+        name: 'collection',
+        meta: {
+          title: 'collection',
+          nav: false,
+        },
+      },
     ],
   },
 ]
