@@ -48,6 +48,14 @@ export const baseRoutes: RouteRecordRaw[] = [
           title: 'new',
         },
       },
+      {
+        path: '/guide',
+        component: () => import('@/views/guide/index.vue'),
+        name: 'guide',
+        meta: {
+          title: 'guide',
+        },
+      },
     ],
   },
 ]
