@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import type { App } from 'vue'
 import { baseRoutes } from './routes'
@@ -7,7 +7,7 @@ import { setupRouterGuard } from './guard'
 const { BASE_URL } = import.meta.env
 
 export const router = createRouter({
-  history: createWebHistory(BASE_URL),
+  history: createWebHashHistory(BASE_URL),
   routes: baseRoutes,
   scrollBehavior: () => ({ top: 0, left: 0 }),
 })

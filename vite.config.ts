@@ -21,6 +21,7 @@ export default ({ mode }) => {
       },
     },
     server: {
+      port: 1600,
       proxy: {
         '/api': {
           target: 'https://api.ydf.life/',

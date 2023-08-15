@@ -46,9 +46,9 @@ import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'Collection', href: '/collection' },
-  { name: 'Trending', href: '/trending' },
-  { name: 'New Release', href: '/new' },
+  { name: 'Collection', href: '#/collection' },
+  { name: 'Trending', href: '#/trending' },
+  { name: 'New Release', href: '#/new' },
 ]
 
 const mobileMenuOpen = ref(false)
